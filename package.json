@@ -1,0 +1,12 @@
+{
+  "name": "LightsOut",
+  "version": "1.0.0",
+  "description": "Lights Out Game",
+  "main": "www/lightsout.html",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Victor Iris",
+  "license": "ISC",
+  "dependencies": {}
+}

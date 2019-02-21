@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lights out!</title>
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+    crossorigin="anonymous">
+
+  <!-- Local Libraries -->
+  <link rel="stylesheet" href="lightsout.css">
+  <script src="jquery.js"></script>
+  <script src="lib/lightsout.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="">Lights out!</a>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <form class="form-inline my-2 my-lg-0" id="gameInput">
+        <label for="rowcount" class="navbar-text">Rows &nbsp;</label>
+        <input class="form-control mr-sm-2" id="rowcount" type="number" value="8" min="6" max="20" placeholder="Rows" aria-label="Rows">
+        <label for="columncount" class="navbar-text">Columns &nbsp;</label>
+        <input class="form-control mr-sm-2" id="columncount" type="number" value="8" min="6" max="20" placeholder="Columns" aria-label="Columns">
+        <button class="btn btn-outline-primary my-2 my-sm-0" id="newGameButton" type="submit">New Game</button>
+      </form>
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+    <div id="instructionsDiv">
+      <h1>&#8673; Configure the size first &#8673;</h1>
+    </div>
+    <div id="gameDiv">
+      <!-- generated content -->
+    </div>
+    <!-- /.container -->
+  </main>
+</body>
+
+</html>
